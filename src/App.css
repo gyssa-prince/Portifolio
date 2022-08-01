@@ -1,0 +1,304 @@
+body {
+  font-family: 'Roboto Mono';
+  background-color: rgb(16,42,38)
+
+}
+html {
+  scroll-behavior: smooth;
+}
+.title{
+  display: flex;
+}
+.title1{
+  display: none;
+}
+.Logo h1{
+color:white;
+font-size: 24px;
+padding-top: 6px;
+padding-left: 12%;
+}
+.mobilemenu{
+  display: none;
+}
+.Head1{
+  position:absolute;
+  top: 0;
+  left:0;
+  right: 0;
+  width: 100%;
+  height: 15%;
+}
+/* unvisited link */
+a:link {
+  color: white
+}
+/* visited link */
+a:visited {
+  color: white;
+}
+.navbar{
+  position:absolute;
+  top: 55px;
+  left:0;
+  background-color: rgba(2, 12, 27, 0.187);
+  width: 100%;
+  height: 60px;
+}
+.navbar h3{
+  color: white;
+  position: absolute;
+  right: 12%;
+}
+.navbar a{
+  padding: 12px;
+}
+.navbar a:hover{
+  padding: 12px;
+  color: #1af2fd;
+  cursor: pointer;
+
+}
+.aboutMe{
+  padding-top: 240px;
+  padding-left: 15%;
+  display: flex;
+  padding-bottom: 80px;
+}
+.aboutMe img{
+  width: 360px;
+  height: 500px;
+  border-radius: 8px;
+}
+.AboutMeWords{
+  padding: 12px;
+  padding-left: 48px;
+  color: rgb(182, 178, 178);
+}
+.AboutMeWords p{
+  padding-left: 12px;
+}
+.ProjectContainer{
+  padding-top: 20px;
+  margin-left: 10%;
+  width: 80%;
+  color: rgb(182, 178, 178);
+}
+.ProjectContainer h2,h3{
+  color: white
+}
+.ProjectContainer1{
+  display: flex;
+}
+.project1 img{
+width: 300px;
+}
+.project1{
+  padding: 30px;
+}
+.built{
+  padding-right: 180px;
+}
+.project{
+  display: flex;
+  grid-column: 2;
+
+}
+.projectImg img{
+width: 100%;
+opacity: 0.4;
+}
+.projectImg img:hover{
+  opacity: 1.0;
+  }
+.projectWords p{
+background-color: rgb(60, 103, 104);
+}
+.icons{
+  display: flex;
+  align-items: center;
+justify-content: center;
+}
+.AllIcons{
+  padding: 28px;
+  opacity: 0.6;
+}
+.AllIcons:hover{
+  padding: 28px;
+  opacity: 1.0;
+}
+.ContactMe{
+  padding-top: 30px;
+  padding-inline: 100px;
+}
+.ContactMe h2{
+color: white;
+}
+.projectImg1{
+  width: 300px;
+}
+.projectWords1{
+  padding-left: 60px;
+}
+.projectWords1 p{
+  background-color: rgb(60, 103, 104);
+}
+.gy{
+  padding-left: 60px;
+}
+.left{
+  writing-mode: vertical-rl; 
+  position:fixed;
+  top: 50%;
+  left: 0%;
+  color: rgb(182, 178, 178);
+  padding-top: 30px;
+  font-size: 12px;
+}
+.right{
+  writing-mode: vertical-rl; 
+  position:fixed;
+  top: 50%;
+  right: 0%;
+  font-size: 12px;
+  color: rgb(182, 178, 178);
+}
+.pline {
+  width: 50%;
+  margin: auto;
+  margin-top: -5%;
+  margin-bottom: -5%;
+  transform: rotate(0deg);
+  border-color: #1af2fd;
+}
+.icons p{
+display: flex;
+}
+h2 {
+  width: 100%; 
+  text-align: center; 
+  border-bottom: 3px solid rgba(2, 12, 27, 0.405);
+  line-height: 0.1em;
+  margin: 10px 0 20px; 
+} 
+
+h2 span { 
+  background-color: rgb(16,42,38);
+   color: white;
+   padding:0 10px; 
+}
+h5{
+  font-size: 24px;
+  margin-top: -4px;
+}
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #000000 0%,
+    #000000 29%,
+    #595959 68%,
+    #ffffff 29%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+      font-size: 32px;
+  margin-top: 15%;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+/*Responsiveness */
+@media (max-width: 768px) {
+  .Logo h1{
+    color:white;
+    font-size: 18px;
+    }
+.navbar a{
+  display: none;
+}
+.mobilemenu{
+  display: flex;
+  position:absolute;
+  top: 0px;
+  right: 0;
+}
+.aboutMe{
+  display: block;
+  padding-inline:0;
+}
+.ProjectContainer1{
+  display: block;
+}
+.project{
+  display: block;
+}
+.ContactMe{
+  padding-inline:0%;
+}
+.icons{
+  padding-inline: 0;
+}
+.AllIcons{
+  padding: 15px;
+  width: 18px;
+}
+.right,.left {
+ display: none;
+}
+.aboutMe img{
+  width: fit;
+  border-radius: 8px;
+}
+.navbar{
+  right: 0%;
+}
+.EE{
+  font-size: 18px;
+}
+.ProjectContainer{
+  padding-top: 20px;
+  margin-left: 0;
+  width: 100%;
+}
+.built{
+  padding-right: 10px;
+}
+.projectWords{
+  padding-left: 18px;
+}
+.projectWords1{
+  padding-left: 18px;
+}
+.gy img{
+  padding-left:0px;
+}
+.title{
+  display: none;
+}
+.title1{
+  display: flex;
+  padding-left: 40px;
+}
+.projectImg{
+  width: 40%;
+}
+.mobileNav.active a{
+  margin-top: 2px;
+}
+.mobileNav a{
+  display: block;
+  color: white;
+}
+}
