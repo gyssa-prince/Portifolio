@@ -18,6 +18,9 @@ font-size: 24px;
 padding-top: 6px;
 padding-left: 12%;
 }
+.footerWord{
+  color: rgb(0, 0, 0);
+}
 .mobilemenu{
   display: none;
 }

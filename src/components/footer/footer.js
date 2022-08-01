@@ -44,6 +44,7 @@ export default function Footer() {
                </a>
                </div>
            </div>
+           <p align="center" className='footerWord'>Made by Me with <Icon icon="ps:lovedsgn" /></p>
        </div>
        <div className="copyright">
       <div className="left">
