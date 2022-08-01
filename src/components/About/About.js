@@ -19,8 +19,10 @@ export default function About() {
               I am also a content creater, I make blogs on Technological tricks.<br/><br/>
              </p>
              <h3>My Skills:</h3>
-             <p>HTML, CSS, JAVASCRIPT, FIREBASE, PHP, REACT, NODE, GRAPHQL,<br/> TYPESCRIPT, C++, C, JAVA</p>
-             <p>Figma, Photoshop</p><br></br>
+             <p>HTML, CSS, JAVASCRIPT, FIREBASE, PHP, REACT, NODE, GRAPHQL,<br/> TYPESCRIPT, C++, C</p>
+             <p>Figma, Photoshop</p>
+             <p>Tools: Git, Heroku, Netlify, Vercel</p>
+             <br/>
              <h4>For more information please don't hesitate to contact me.</h4>
          </div>
      </div>
