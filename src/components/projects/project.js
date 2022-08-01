@@ -18,7 +18,7 @@ export default function Project() {
               <h3>Education</h3>
               <ol>
               <li>SOFTWARE DEVELOPMENT, I've completed Software development at APAPER COMPLEX SCHOOL</li>
-              <li>SOFTWARE ENGINEERING, I currently doing Software Engineering at ADVENTIST UNIVERSITY OF CENTRAL AFRICA (AUCA)</li>
+              <li>SOFTWARE ENGINEERING, I'm currently doing Software Engineering at ADVENTIST UNIVERSITY OF CENTRAL AFRICA (AUCA)</li>
               <li>ANDELA TECHNICAL LEADERSHIP PROGRAM, I'm about to graduate from  Andela (ATLP)</li>
               </ol>
               </div>
