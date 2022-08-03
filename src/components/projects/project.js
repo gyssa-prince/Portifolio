@@ -71,7 +71,7 @@ export default function Project() {
              </a>
             </div>
              <p>
-             Is an application that came to solve queuing on bus stop and wait for a long time a bus by giving real time location of buses in your route and free seats
+             Gyssa blog is web app that I built during ATLP bootcamp where I post blogs, I make blogs on fun facts, technological tricks, and scientific stuff.
              </p>
          </div>
      </div>
