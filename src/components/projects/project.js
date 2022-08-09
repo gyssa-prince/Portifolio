@@ -27,7 +27,7 @@ export default function Project() {
               <h3 align="center">What I've built</h3>
               <div className="project">
             <div className="title1">
-            <a href='https://phantom-dream-team.netlify.app/'>
+            <a href='https://deploy-preview-51--phantom-dream-team.netlify.app/'>
             <h4>
              PHANTOM
              </h4>
@@ -38,7 +38,7 @@ export default function Project() {
          </div>
          <div className="projectWords">
          <div className="title">
-            <a href='https://phantom-dream-team.netlify.app/'>
+            <a href='https://deploy-preview-51--phantom-dream-team.netlify.app/'>
             <h4>
              PHANTOM
              </h4>
