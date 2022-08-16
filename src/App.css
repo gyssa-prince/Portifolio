@@ -241,6 +241,10 @@ h5{
   display: block;
   padding-inline:0;
 }
+.aboutMe img{
+  display: block;
+  padding-inline:2%;
+}
 .ProjectContainer1{
   display: block;
 }

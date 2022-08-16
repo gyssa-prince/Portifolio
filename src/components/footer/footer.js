@@ -19,7 +19,7 @@ export default function Footer() {
                </a>
                </div>
                <div className="AllIcons">
-                 <a href="mailto:gyssatechnologies@gmail.com">
+                 <a href="mailto:gyssagaraprince@gmail.com">
                <Icon icon="fontisto:email" color="white" width="40" />
                </a>
                </div>
