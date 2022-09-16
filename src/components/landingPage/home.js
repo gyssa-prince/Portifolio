@@ -21,7 +21,6 @@ export default function Home() {
         if (pos == Words.length) {
           pos = 1;
         }
-        console.log(pos);
         temp = Words[0];
         Words[0] = Words[pos];
         Words[pos] = temp;

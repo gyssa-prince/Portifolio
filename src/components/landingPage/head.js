@@ -1,13 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Icon } from "@iconify/react";
 import MobileNavbar from "./mobileNavbar";
+
 export default function Head() {
   const [Open, setOpen] = useState(false);
+  const [loading, setLoading] = useState(true);
   let home = document.querySelector(".hero");
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 500);
+    setLoading(false);
+  });
 
   function open() {
     setOpen(true);
-    home.classList.toggle("blur");
+    if (!loading) {
+      home.classList.toggle("blur");
+    }
   }
   window.onscroll = () => {
     setOpen(false);
