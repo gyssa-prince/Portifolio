@@ -1,7 +1,23 @@
 import React, { useState } from "react";
 import { Icon } from "@iconify/react";
+import MobileNavbar from "./mobileNavbar";
 export default function Head() {
   const [Open, setOpen] = useState(false);
+  let home = document.querySelector(".hero");
+
+  function open() {
+    setOpen(true);
+    home.classList.toggle("blur");
+  }
+  window.onscroll = () => {
+    setOpen(false);
+    home.classList.remove("blur");
+  };
+  function close() {
+    setOpen(false);
+    home.classList.remove("blur");
+  }
+
   return (
     <div>
       <div className="Head1">
@@ -19,32 +35,30 @@ export default function Head() {
             <a href="#contact">Contact me</a>
           </h3>
           <div className="mobilemenu">
-            {Open && (
-              <div className="mobileNav">
-                <a href="#about">About me</a>
-                <a href="#skills">Skills</a>
-                <a href="#experience">Works</a>
-                <a href="#contact">Contact me</a>
-              </div>
-            )}
             {!Open && (
               <Icon
                 icon="bytesize:menu"
                 id="menu-icon"
                 color="white"
                 width={64}
-                onClick={() => setOpen(true)}
-              />
-            )}
-            {Open && (
-              <Icon
-                icon="fe:close"
-                color="white"
-                width="64"
-                onClick={() => setOpen(false)}
+                onClick={() => open()}
               />
             )}
           </div>
+
+          {Open && (
+            <div className="menu">
+              <div className="closeMenuContainer" onClick={() => close()}>
+                <Icon
+                  icon="fe:close"
+                  className="closeMenu"
+                  color="white"
+                  width={64}
+                />
+              </div>
+              <MobileNavbar setOpen={setOpen} />
+            </div>
+          )}
         </div>
       </div>
     </div>
