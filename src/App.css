@@ -18,6 +18,12 @@ font-size: 24px;
 padding-top: 6px;
 padding-left: 12%;
 }
+.About{
+  display: block;
+  padding-inline: 15%;
+  margin-top: -640px;
+  padding-top: 40px;
+}
 .footerWord{
   color: rgb(0, 0, 0);
 }
@@ -34,7 +40,8 @@ padding-left: 12%;
 }
 /* unvisited link */
 a:link {
-  color: white
+  color: white;
+  text-decoration:none;
 }
 /* visited link */
 a:visited {
@@ -63,10 +70,8 @@ a:visited {
 
 }
 .aboutMe{
-  padding-top: 240px;
-  padding-left: 15%;
+  padding-top: 60px;
   display: flex;
-  padding-bottom: 80px;
 }
 .aboutMe img{
   width: 360px;
@@ -78,62 +83,254 @@ a:visited {
   padding-left: 48px;
   color: rgb(182, 178, 178);
 }
+.SkillOpener{
+  color: rgb(182, 178, 178);
+  font-size: 16px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.hero{
+  padding-top: 240px;
+}
+.hero h1{
+  font-size: 80px;
+  color: rgb(182, 178, 178);
+  text-align: center;
+  padding-inline: 15%;
+}
+.hero p{
+  text-align: center;
+  margin-inline: 15%;
+  padding-block: 30px;
+  font-size: 16px;
+}
+.hero samp{
+  text-align: center;
+  background-color:  rgb(182, 178, 178);
+  padding-inline: 10px;
+  padding-block: 10px;
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.box {
+  padding: 0 50px 0 10px;
+  border: 2px solid #656464;
+  border-radius: 10px;
+}
+
+.box h2 {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+@keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+}
+
+.hero span::after {
+  content: "";
+  width: 2px;
+  height: 20px;
+  background: black;
+  position: absolute;
+  display: inline-block;
+  animation: cursor-blink 1.5s steps(2) infinite;
+}
+.AboutMeWords{
+  padding-top: 60px;
+}
 .AboutMeWords p{
+  padding-left: 12px;
+  padding-top: 20px;
+  font-size: 18px;
+}
+.AboutMeWords h4{
   padding-left: 12px;
 }
 .ProjectContainer{
-  padding-top: 20px;
-  margin-left: 10%;
-  width: 80%;
+  margin-top: 20px;
+  padding-top: 100px;
+  margin-inline: 15%;
   color: rgb(182, 178, 178);
+  display: block;
+}
+#experience{
+  padding-top: 40px;
 }
 .ProjectContainer h2,h3{
   color: white
 }
-.ProjectContainer1{
-  display: flex;
+.skills{
+  margin-top: 80px;
+  padding: 20px;
+  padding-block: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  background-color: rgba(132, 155, 138, 0.148);
 }
-.project1 img{
-width: 300px;
+.contactForm{
+width: 60%;
+margin-left: 20%;
+margin-top: 80px;
+height: 480px;
+background-color: rgba(2, 12, 27, 0.187);
+padding-top: 40px;
 }
-.project1{
-  padding: 30px;
+.Form{
+  margin-left: 20%;
 }
-.built{
-  padding-right: 180px;
+.Form input{
+  width: 75%;
+  height: 20px;
+  padding-block: 4px;
+  background-color:white;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: white;
+  padding: 10px;
+  border: 1px solid rgba(10, 180, 180, 1);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
 }
-.project{
-  display: flex;
-  grid-column: 2;
-
+.scroll{
+  margin-inline: 15%;
+  margin-top: 40px;
 }
-.projectImg img{
-width: 100%;
-opacity: 0.4;
-}
-.projectImg img:hover{
-  opacity: 1.0;
+.scroll h4{
+  font-weight: 200;
+  font-size: 16px;
+  color: rgb(182, 178, 178);
+  margin-bottom: 5px;
   }
-.projectWords p{
-background-color: rgb(60, 103, 104);
+  #skills{
+    margin-inline: 15%;
+    padding-top: 40px;
+  }
+  .vl {
+      border-left: 1px solid white;
+      height: 60px;
+      margin-left: 2px;
+    }
+    .professional{
+      margin-top: 80px;
+      padding: 20px;
+      padding-block: 40px;
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      background-color: rgba(132, 155, 138, 0.148);
+    }
+    .professional .skill{
+      margin: 10px;
+text-align: center;
+padding: 10px;
+height: 100px;
+background-color: rgb(16,42,38);
+color:rgb(182, 178, 178);
+    }
+    .SkillOpener{
+      margin-block: 60px;
+    }
+.contactForm p{
+  color: rgb(182, 178, 178);
+  padding-bottom: 20px;
 }
+.Form textarea{
+ width: 75%;
+ height: 150px;
+ font-size: 16px;
+ color: white;
+ padding: 10px;
+ outline: none;
+padding-block: 4px;
+background-color:white;
+border: 1px solid rgba(10, 180, 180, 1);
+border-top: none;
+border-left: none;
+border-right: none;
+}
+#send-btn {
+  border: 1px solid rgba(10, 180, 180, 1);
+  background: rgba(20, 20, 20, .6);
+  font-size: 18px;
+  color: white;
+  margin-top: 20px;
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: .4s;
+  &:hover {
+    background: rgba(20, 20, 20, .8);
+    padding: 10px 80px;
+  }
+}
+.skill{
+margin: 30px;
+text-align: center;
+padding: 20px;
+height: 60%;
+background-color: rgb(16,42,38);
+}
+.skill:hover{
+  transform: scale(1.02); 
+  }
+.skill img{
+  width: 100%;
+  height: 120%;
+}
+
 .icons{
   display: flex;
   align-items: center;
 justify-content: center;
 }
+.Arrows{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-top: -40px;
+}
+.next{
+  display: flex;
+  color: rgba(255, 255, 255, 0.816);
+}
+.back{
+  position: absolute;
+  margin-top: -70px;
+  left: 45%;
+  color: rgba(255, 255, 255, 0.816);
+}
 .AllIcons{
   padding: 28px;
   opacity: 0.6;
+  font-size: 40px;
 }
 .AllIcons:hover{
   padding: 28px;
   opacity: 1.0;
 }
 .ContactMe{
+  position: relative;
+  margin-top: 100px;
   padding-top: 30px;
   padding-inline: 100px;
 }
+#skills{
+  margin-top: 80px;
+}
+
 .ContactMe h2{
 color: white;
 }
@@ -223,7 +420,120 @@ h5{
   }
 }
 /*Responsiveness */
+@media (max-width: 1292px) {
+  .AboutMeWords{
+    padding-top: 10px;
+  }
+  .AboutMeWords p{
+    padding-left: 12px;
+    padding-top: 5px;
+    font-size: 18px;
+  }
+  .skill p{
+    font-size: 12px;
+  }
+  .skill{
+    margin: 30px;
+    text-align: center;
+    padding: 20px;
+    height: 160px;
+    background-color: rgb(16,42,38);
+    }
+    .skill:hover{
+      transform: scale(1.02); 
+      }
+}
+@media (max-width: 1029px) {
+  .AboutMeWords{
+    padding-top: 10px;
+  }
+  .AboutMeWords p{
+    padding-left: 12px;
+    padding-top: 5px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 975px) {
+  .aboutMe{
+    display: block;
+    padding-inline:0;
+  }
+  .aboutMe img{
+    display: block;
+    padding-inline:20%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .professional{
+    margin-top: 80px;
+    padding: 20px;
+    padding-block: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    background-color: rgba(132, 155, 138, 0.148);
+  }
+  .skills .skill{
+    height: 100px;
+    width: 200px;
+    padding-right: 20px;
+    margin-left: 10px;
+   
+  } 
+  .skill img{
+  width: 200px;
+  height: 130px;
+  }
+}
+
 @media (max-width: 768px) {
+  .skills{
+    margin-inline: 15%;
+    display: block;
+    
+  }
+  .skill{
+    padding-bottom: 100px;
+  }
+  .skills .skill{
+    height: 100%;
+    width: 88%;
+    padding: 1%;
+    margin-inline: 5%;
+   
+  } 
+  .skill img{
+    padding: 10px;
+  }
+  .aboutMe img{
+  margin-inline: 5%;
+  width: 85%;
+  height: 70%;
+  margin-bottom: 30px;
+  }
+  .AboutMeWords{
+    padding-left: 0;
+    padding-top: 5px;
+    margin-inline: 5%;
+  }
+  .contactForm{
+    width: 70%;
+    margin-inline: 15%;
+    margin-top: 80px;
+    height: 480px;
+    background-color: rgba(2, 12, 27, 0.187);
+    padding-top: 40px;
+    }
+    .Form{
+      margin-left: 10%;
+    }
+    .Form input{
+      width: 85%;
+      height: 20px;
+    }
+    .Form textarea{
+      width: 85%;
+    }
   .Logo h1{
     color:white;
     font-size: 18px;
@@ -258,7 +568,8 @@ h5{
   padding-inline: 0;
 }
 .AllIcons{
-  padding: 15px;
+  padding-inline: 30px;
+  margin-left: -10px;
   width: 18px;
 }
 .right,.left {
@@ -307,5 +618,73 @@ h5{
 .mobileNav a{
   display: block;
   color: white;
+}
+.professional{
+  margin-top: 80px;
+  padding: 20px;
+  padding-block: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  background-color: rgba(132, 155, 138, 0.148);
+}
+.professional .skill p{
+  display: none;
+}
+.professional .skill {
+  width: 60%;
+  height: 60px;
+}
+}
+@media (max-width: 693px) {
+.hero{
+  margin-inline: 5%;
+}
+.About{
+  margin-inline: 5%;
+  padding-inline: 0;
+}
+#skills{
+  margin-inline: 5%;
+}
+.skills{
+  margin-inline: 5%; 
+}
+.skills .skill img{
+  width: 75%;
+}
+.contactForm{
+  width: 90%;
+  margin-inline: 5%;
+  }
+  .hero h1{
+    font-size: 80px;
+    text-align: left;
+    padding-inline: 5%;
+  }
+  .hero p{
+    text-align: left;
+    padding-left: 10%;
+    margin-inline: 5%;
+    padding-block: 30px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .scroll{
+    margin-inline: 5%;
+  }
+}
+@media (max-width: 573px) {
+  .hero h1{
+    font-size: 50px;
+  }
+  .scroll{
+    margin-top: 160px;
+    margin-inline: 5%;
+  }
+}
+@media (max-width: 533px) {
+.AllIcons{
+  font-size: 24px;
+  padding-inline: 20px;
 }
 }

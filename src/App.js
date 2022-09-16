@@ -1,24 +1,33 @@
-import React,{useState} from 'react'
+import React, { useState } from "react";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
-import About from './components/About/About.js';
-import Footer from './components/footer/footer.js';
-import Head from './components/landingPage/head.js';
-import Loader from './components/loader/loader.js';
-import Project from './components/projects/project.js';
+import About from "./components/About/About.js";
+import Footer from "./components/footer/footer.js";
+import Head from "./components/landingPage/head.js";
+import Loader from "./components/loader/loader.js";
+import Project from "./components/projects/project.js";
+import Home from "./components/landingPage/home.js";
+import Skills from "./components/skills/skills.js";
 function App() {
-  const [Compn, setCompn] = useState([<Loader/>]);
+  const [Compn, setCompn] = useState([<Loader />]);
   setTimeout(() => {
-    setCompn([<Head/>,<About/>,<Project/>,<Footer/>])    
+    setCompn([
+      <Head />,
+      <Home />,
+      <About />,
+      <Skills />,
+      <Project />,
+      <Footer />,
+    ]);
   }, 2000);
- return(
-   <div>
+  return (
+    <div>
       <BrowserRouter>
-            <Routes>
-            <Route exact path="/" element={Compn}></Route>
-            {/* <Route exact path="/" element={[<Head/>,<About/>,<Project/>,<Footer/>]}></Route> */}
-            </Routes>
-        </BrowserRouter>
-   </div>
- )
+        <Routes>
+          <Route exact path="/" element={Compn}></Route>
+          {/* <Route exact path="/" element={[<Head/>,<About/>,<Project/>,<Footer/>]}></Route> */}
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
 }
-export default App
+export default App;
