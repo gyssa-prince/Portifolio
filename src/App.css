@@ -628,13 +628,17 @@ h5{
 .start{
   margin-top: 100px;
 }
-
+.Logo.blur h1{
+  filter: blur(2px);
+}
 .menu{
+  margin-top: -55px;
   z-index: 5;
   position: absolute;
+  transition-delay: 1s;
   right: 0;
   top: 0;
-  background-color: rgb(25, 87, 78);
+  background-color:rgb(24, 62, 57);
   border-width: 4px;
   width: 70%;
   height: 900px;
@@ -652,6 +656,7 @@ align-items: center;
   position: absolute;
   right:0; 
   width: 35%;
+  transition: width 2s, height 2s, transform 2s;
 }
 
 .menu{
