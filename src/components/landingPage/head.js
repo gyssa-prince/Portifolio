@@ -70,7 +70,7 @@ export default function Head() {
                   width={64}
                 />
               </div>
-              <MobileNavbar setOpen={setOpen} />
+              <MobileNavbar />
             </div>
           )}
         </div>
