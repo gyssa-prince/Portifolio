@@ -27,7 +27,7 @@ export default function About() {
               <p>I also like to write articles on tech stuff</p>
               <h4>
                 For more information please don't hesitate to{" "}
-                <a href="">contact me.</a>
+                <a href="mailto:gyssagaraprince@gmail.com">contact me.</a>
               </h4>
             </div>
           </div>
