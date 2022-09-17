@@ -8,6 +8,9 @@ export default function Head() {
   let home = document.querySelector(".hero");
   let head = document.querySelector(".Logo");
   let menu = document.querySelector(".menu");
+  const d = new Date();
+  let [secs, setSecs] = useState(0);
+
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
@@ -17,15 +20,20 @@ export default function Head() {
 
   function open() {
     setOpen(true);
+    setSecs(d.getTime());
     if (!loading) {
       home.classList.toggle("blur");
       head.classList.toggle("blur");
     }
   }
-  window.onscroll = () => {
-    if (Open) {
+  function closeNav() {
+    const sec = d.getTime();
+    if (sec - secs > 1000) {
       close();
     }
+  }
+  window.onscroll = () => {
+    setOpen(false);
   };
   function close() {
     home.classList.remove("blur");
@@ -66,16 +74,21 @@ export default function Head() {
           </div>
 
           {Open && (
-            <div className="menu">
-              <div className="closeMenuContainer" onClick={() => close()}>
-                <Icon
-                  icon="fe:close"
-                  className="closeMenu"
-                  color="white"
-                  width={64}
-                />
+            <div className="navScreen">
+              <div className="leftSideNav">
+                <div className="closeNav" onClick={() => closeNav()}></div>
               </div>
-              <MobileNavbar />
+              <div className="menu">
+                <div className="closeMenuContainer" onClick={() => close()}>
+                  <Icon
+                    icon="fe:close"
+                    className="closeMenu"
+                    color="white"
+                    width={64}
+                  />
+                </div>
+                <MobileNavbar />
+              </div>
             </div>
           )}
         </div>

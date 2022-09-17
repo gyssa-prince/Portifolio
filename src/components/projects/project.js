@@ -13,14 +13,18 @@ export default function Project() {
         <h3 className="SkillOpener">Check out some of my recent work</h3>
 
         <div className="skills">
-          <div className="skill">
-            <img src={Phantom}></img>
-            <p>PHANTOM</p>
-          </div>
-          <div className="skill">
-            <img src={Gyssa}></img>
-            <p>GYSSA BLOG</p>
-          </div>
+          <a href="https://phantom-dream-team.netlify.app/">
+            <div className="skill">
+              <img src={Phantom}></img>
+              <p>PHANTOM</p>
+            </div>
+          </a>
+          <a href="https://gyssa-prince.github.io/node-project/blog/index.html">
+            <div className="skill">
+              <img src={Gyssa}></img>
+              <p>GYSSA BLOG</p>
+            </div>
+          </a>
         </div>
       </section>
     </div>
