@@ -33,6 +33,8 @@ export default function Head() {
     }
   }
   window.onscroll = () => {
+    home.classList.remove("blur");
+    head.classList.remove("blur");
     setOpen(false);
   };
   function close() {
