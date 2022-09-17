@@ -7,6 +7,7 @@ export default function Head() {
   const [loading, setLoading] = useState(true);
   let home = document.querySelector(".hero");
   let head = document.querySelector(".Logo");
+  let menu = document.querySelector(".menu");
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
@@ -22,14 +23,18 @@ export default function Head() {
     }
   }
   window.onscroll = () => {
-    setOpen(false);
-    home.classList.remove("blur");
-    head.classList.remove("blur");
+    if (Open) {
+      close();
+    }
   };
   function close() {
-    setOpen(false);
     home.classList.remove("blur");
     head.classList.remove("blur");
+    menu.classList.toggle("off");
+    setTimeout(() => {
+      menu.classList.remove("off");
+      setOpen(false);
+    }, 200);
   }
 
   return (
