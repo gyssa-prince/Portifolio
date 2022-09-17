@@ -202,7 +202,7 @@ padding-top: 40px;
   background-color:white;
   margin-bottom: 10px;
   font-size: 16px;
-  color: white;
+  color: black;
   padding: 10px;
   border: 1px solid rgba(10, 180, 180, 1);
   border-top: none;
@@ -256,7 +256,7 @@ color:rgb(182, 178, 178);
  width: 75%;
  height: 150px;
  font-size: 16px;
- color: white;
+ color: black;
  padding: 10px;
  outline: none;
 padding-block: 4px;
@@ -540,11 +540,13 @@ h5{
       margin-left: 10%;
     }
     .Form input{
+      color: #000000;
       width: 85%;
       height: 20px;
     }
     .Form textarea{
       width: 85%;
+      color: #000000;
     }
   .Logo h1{
     color:white;

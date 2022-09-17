@@ -14,7 +14,11 @@ export default function Footer() {
               Send me a message here or use any other
               <br /> way below!
             </p>
-            <form className="Form">
+            <form
+              className="Form"
+              method="POST"
+              action="https://getform.io/f/0e349b18-9885-47e2-9729-21f8d03ed53b"
+            >
               <input type="email" name="email" placeholder="Your email" />
               <br />
               <input
