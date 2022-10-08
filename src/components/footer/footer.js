@@ -19,15 +19,25 @@ export default function Footer() {
               method="POST"
               action="https://getform.io/f/0e349b18-9885-47e2-9729-21f8d03ed53b"
             >
-              <input type="email" name="email" placeholder="Your email" />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your email"
+                required
+              />
               <br />
               <input
                 type="phone"
                 name="phone"
                 placeholder="Your phone number"
+                required
               />
               <br />
-              <textarea name="message" placeholder="Your message"></textarea>
+              <textarea
+                name="message"
+                placeholder="Your message"
+                required
+              ></textarea>
               <br />
               <button type="submit" id="send-btn">
                 Send

@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <div>
       <div className="hero">
-        <h1>I LIKE TO TALK TO COMPUTERS</h1>
+        <h1>I TURN IDEAS INTO 0S AND 1S</h1>
         <p>
           <samp>
             {word}

@@ -57,12 +57,22 @@ export default function Head() {
           </h1>
         </div>
         <div className="navbar">
-          <h3>
-            <a href="#about">About me</a>
-            <a href="#skills">Skills</a>
-            <a href="#experience">Works</a>
-            <a href="#contact">Contact me</a>
-          </h3>
+          <nav class="circle">
+            <ul>
+              <li>
+                <a href="#about">About me</a>
+              </li>
+              <li>
+                <a href="#skills">Skills</a>
+              </li>
+              <li>
+                <a href="#experience">Works</a>
+              </li>
+              <li>
+                <a href="#contact">Contact me</a>
+              </li>
+            </ul>
+          </nav>
           <div className="mobilemenu">
             {!Open && (
               <Icon
